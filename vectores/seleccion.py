@@ -1,5 +1,5 @@
 # Algoritmo de ordenamiento por seleccion
-calif = [None]*6;
+calif = [None]*6
 for estudiante in range(6):
     print("Dame las calificaciones: ")
     calif[estudiante]= float(input())
