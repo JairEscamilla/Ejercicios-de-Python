@@ -31,3 +31,8 @@ primeroNumero = NumeroComplejo(12.0, 4.0)
 print("Numero complejo")
 # Uso de un metodo asociado al objeto
 primeroNumero.imprimirNumero()
+print("Numero complejo modificado (cambiar valor de la parte real) ->")
+primeroNumero.cambiarParteReal(25.0)
+primeroNumero.imprimirNumero()
+print("Parte imaginaria en otro calculo (parteImaginaria + 5.0) ->")
+print((primeroNumero.obtenerParteImaginaria())+5.0)
