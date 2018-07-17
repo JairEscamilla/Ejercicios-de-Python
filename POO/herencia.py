@@ -43,3 +43,21 @@ print("Operando 2 de la suma")
 suma1.imprimirValor(suma1.obtenerValor2())
 print("Resultado de la suma => ")
 suma1.sumar()
+
+class Multiplicacion(Operacion):
+    """docstring for Multiplicacion."""
+    def __init__(self, numero1, numero2):
+        super().__init__(numero1, numero2)
+    def multiplicar(self):
+        self.imprimirValor(self.valor1*self.valor2)
+
+    # Se sobreescribe un metodo de la clase padre
+    def imprimirValor(self, numero):
+        print("El numero es->"+str(numero))
+# Fin de la clase hijo
+
+multiplicacion = Multiplicacion(10, 5)
+multiplicacion.imprimirValor(multiplicacion.obtenerValor1())
+multiplicacion.imprimirValor(multiplicacion.obtenerValor2())
+print("Resultado de la multiplicacion: ")
+multiplicacion.multiplicar()
